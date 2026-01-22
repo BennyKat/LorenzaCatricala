@@ -4,33 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lorenza Catricalà</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
-    <link rel="icon" href="microphone.png" >
 
+  <link rel="stylesheet" href="style.css">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="icon" href="microphone.png">
 </head>
+
 <body>
 
-  <!--  <a href="#contatti" class="cta-mobile">SCRIVIMI</a>-->
+<header class="site-header">
+  <div class="logo">
+  <img src="LCW.png" alt="Lorenza Catricalà – Canto">
+</div>
 
+  <nav class="nav">
+    <a href="#about">About</a>
+    <a href="#metodo">Metodo</a>
+    <a href="#recensioni">Recensioni</a>
+    <a href="#eventi">Eventi</a>
+    <a href="#scrivimi">Scrivimi</a>
+  </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="overlay">
-      <h1>Scopri la tua vera voce</h1>
-      <p>Lezioni di canto per adulti, cantanti avanzati e giovani voci</p>
-      <a href="#contatti" class="btn">Prenota una lezione di prova</a>
-    </div>
-  </section>
+  <button class="nav-toggle" aria-label="Apri menu">☰</button>
+</header>
 
-  <section class="section reveal about">
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay">
+    <h1>Scopri la tua vera voce</h1>
+    <p>Lezioni di canto per adulti, cantanti avanzati e giovani voci</p>
+  </div>
+</section>
+
+<!-- CHI SONO -->
+  <section class="section reveal about" id="about">
     <h2>Chi sono</h2>
     <hr class="section-divider" >
 
@@ -43,36 +58,34 @@ Accanto all’attività concertistica, dedico grande attenzione alla <b>didattic
     </p>
   </section>
 
-  <!-- ATTIVITÀ -->
-  <section class="section reveal">
-    <h2>Il mio lavoro</h2>
+<!-- METODO -->
+<section class="section reveal" id="metodo">
+   <h2>Il mio metodo</h2>
     <hr class="section-divider">
+    <p class="justify-center">Un canto efficace è quello che racchiude al suo interno tutti gli elementi musicali che danno senso e vita a un brano. 
+        Per questo, oltre alla tecnica vocale, il mio metodo lavora in modo approfondito su fraseggio, pronuncia, timing, ritmo e ricerca dei colori vocali.
+        <b>L’obiettivo </b>è sviluppare cantanti consapevoli, capaci di interpretare la musica con precisione stilistica, musicalità ed espressività, rispettando il linguaggio del brano e rendendo la voce uno strumento musicale completo.
+</p>
 
     <div class="grid">
       <div class="card reveal">
         <h3>Lezioni individuali</h3>
-        <p>Percorsi personalizzati per migliorare tecnica, espressività e consapevolezza vocale.</p>
       </div>
       <div class="card reveal">
         <h3>Lezioni di gruppo</h3>
-        <p>Ascolto, armonia e lavoro corale per crescere insieme.</p>
       </div>
       <div class="card reveal">
-        <h3>Preparazione esami LCM</h3>
-        <p>Studio strutturato per affrontare gli esami con sicurezza.</p>
+        <h3>Laboratori Corali Gospel&Soul</h3>
       </div>
-      <div class="card reveal">
-        <h3>Coro e Masterclass</h3>
-        <p>Esperienze formative per cantanti di ogni livello.</p>
+          <div class="card reveal">
+        <h3> Masterclass Soul Singers</h3>
       </div>
     </div>
-  </section>
+    <!--    </section>
 
-<!-- VIDEO -->
-<section class="section reveal light">
-  <h2 >Ascolta e conosci il mio approccio</h2>
-  <hr class="section-divider" style="width:350px">
-
+ VIDEO
+<section class="section reveal ">
+ -->
   <div class="video-wrapper">
     <iframe 
       src="https://www.youtube.com/embed/Pk2hVU3kYN0"
@@ -81,120 +94,170 @@ Accanto all’attività concertistica, dedico grande attenzione alla <b>didattic
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen>
     </iframe>
+
+  </div>
+   <h3 class="centered">Un viaggio nella <b>Black Music</b>.</h3>
+ <p class="centered">Tre incontri, uno al mese, per esplorare la Black Music a 360 gradi: stile, interpretazione, repertorio e consapevolezza vocale.</p>
+
+</section>
+ <!-- RECENSIONI -->
+<section class="section reveal" id="recensioni">
+  <h2>Cosa dicono gli allievi</h2>
+  <hr class="section-divider">
+
+  <div class="reviews-grid">
+
+    <div class="review-card">
+      <p class="review-text">
+      Ho partecipato alla Masterclass fatta "Soul Singers" ed è stata  molto interessante: Lorenza ha dato diversi spunti per quanto riguarda l'importanza dell'ascolto e del ritmo. È un'insegnante veramente preparata e sa molto bene quello che insegna e ciò che vuole trasmettere.
+Molto bello è il fatto che sia riuscita a creare un ambiente di apprendimento stimolante e libero, privo di giudizio.  </p>
+
+      <button class="read-more">Leggi tutto</button>
+      <span class="review-author">— Giorgia B.</span>
+    </div>
+
+    <div class="review-card">
+      <p class="review-text ">
+       Vado a lezione da Lorenza da circa un anno emmezzo. Oltre ad essere una persona squisita, propositiva e preparata, 
+       ha un metodo molto intuitivo e chiaro - mi aiuta a visualizzare le cose e a capirle molto velocemente. La cosa che più mi piace è che riusciamo a 
+       spaziare su tantissimi generi, lavoriamo sul ritmo e agilità, e accoglie sempre le mie proposte. Per me è stato un modo diverso di vivere la musica, 
+       di divertirmi e crescere musicalmente. Da quando seguo questo percorso sento molti miglioramenti nella mia voce.
+      </p>
+        <button class="read-more">Leggi tutto</button>
+
+      <span class="review-author">— Giuseppina S.</span>
+    </div>
+
+    <div class="review-card">
+      <p class="review-text">
+       Mi sono iscritta al master "Soul Singers" spinta dalla curiosità di approcciare un genere diverso dalle mie frequentazioni musicali (sia per l'ascolto che per la pratica). 
+    Ho trovato in Lorenza una guida competente e molto accogliente, che ha saputo lavorare su ogni componente del gruppo (piuttosto eterogeneo), suggerendo esercizi che hanno fatto tirare fuori da ciascuno di noi, il meglio 
+      </p>
+     <button class="read-more">Leggi tutto</button>
+      <span class="review-author">— Michela P.</span>
+    </div>
+
+        <div class="review-card">
+      <p class="review-text">
+     Dopo anni di canto incentrato sulla musica antica ho pensato di esplorare altri modi di usare la voce e per caso mi sono ritrovata in una Masterclass di Lorenza.
+    Occasione preziosa perché con la sua professionalità e bravura mi ha insegnato tantissimo anche in poco tempo. 
+    Consiglio vivamente 😍 </p>
+     <button class="read-more">Leggi tutto</button>
+      <span class="review-author">— Alessia Z.</span>
+    </div>
+
+    
+    <div class="review-card">
+      <p class="review-text">
+     Studio canto con lezioni individuali da molti anni, ormai, sempre alla ricerca di miglioramento.
+    Però partecipare alla Masterclass tenuta da Lorenza mi ha offerto spunti e suggerito dettagli impossibili da afferrare nelle lezioni individuali. 
+    Si impara dagli errori, o anche solo dai suggerimenti, che vengono dati a ciascuno.
+    Precisa, accorta, ad ognuno da consigli personalizzati e si accerta che siano stati recepiti, facendo provare subito.
+    E la spiegazione che dà diventa una lezione per tutti.
+
+    Mi colpisce sempre che con due parole di correzione consenta letteralmente e immediatamente di cambiare il suono di una voce.
+    Le competenze tecniche di Lorenza le permettono di spiegare con scioltezza dei concetti anche complessi e, non secondario, sempre con il sorriso e l'incoraggiamento. 
+
+    Aspetti, questi, non secondari: si va per imparare e si deve lavorare seriamente, ma anche con il cuore leggero, senza la pesantezza del timore del giudizio.    </p>
+      <button class="read-more">Leggi tutto</button>
+      <span class="review-author">— Alessantra S.</span>
+    </div>
+
+        <div class="review-card">
+      <p class="review-text">
+   Ho avuto il piacere di partecipare alla Masterclass di canto Soul Singers ed è stata un'esperienza che è andata anche oltre le mie aspettative! 
+   Lorenza è particolarmente brava e preparata, con una passione contagiosa per questo genere che fa decisamente la differnza. Ogni lezione è stata strutturata in modo molto chiaro,
+    combinando teoria, tecnica vocale ed esercizi pratici. Nonostante siano lezioni di gruppo, non mancano gli spazi per gli esempi pratici ed i feedback 
+    personalizzati che ci hanno permesso di migliorare in tempo reale. Dopo le attente correzioni di Lorenza la differenza era evidente e sotto gli occhi e le orecchie di tutti! :)
+    Lorenza non ne fa passare una! Non si sfugge finchè non si raggiunge l'obiettivo :) anche se il tutto è fatto in modo molto inclusivo ed incoraggiante.
+
+    L'ambiente era sereno e stimolante, il lavoro di gruppo ci ha spinti ad imparare non solo dai nostri "errori" ma anche da quelli degli altri.
+
+    Consiglierei questa esperienza a chiunque abbia una passione per questo genere musicale ed abbia voglia di mettersi in gioco! </p>
+        <button class="read-more">Leggi tutto</button>
+      <span class="review-author">— Nadia G.</span>
+    </div>
+
+
   </div>
 </section>
 
 
-  <!-- RECENSIONI -->
-  <section class="section reveal">
-    <h2>Cosa dicono gli allievi</h2>
-    <hr class="section-divider">
-
-    <div class="grid">
-      <div class="quote">
-        “Ho finalmente trovato libertà e controllo nella voce.”
-        <span>— Marco</span>
-      </div>
-      <div class="quote">
-        “Un percorso serio ma umano, consigliatissimo.”
-        <span>— Viviana</span>
-      </div>
-      <div class="quote">
-        “Tecnica solida e grande attenzione alla persona.”
-        <span>— Giulia</span>
-      </div>
-    </div>
-  </section>
-
 <!-- EVENTI -->
-<section class="section reveal events-section">
+<section class="section reveal events-section" id="eventi">
   <h2>Prossimi incontri</h2>
   <hr class="section-divider">
-
-  <p class="events-intro">
-    Occasioni per cantare, ascoltare e lavorare sulla voce insieme.
-  </p>
 
   <div class="events-grid">
     <div class="event-card">
       <span class="event-date">15 MARZO 2026</span>
       <h3>Masterclass vocale</h3>
-      <p>Un incontro intensivo dedicato alla tecnica e all’espressività.</p>
+      <p>Tecnica ed espressività.</p>
     </div>
 
     <div class="event-card">
       <span class="event-date">APRILE 2026</span>
       <h3>Laboratorio corale</h3>
-      <p>Esperienza collettiva per esplorare la voce nel gruppo.</p>
+      <p>La voce nel gruppo.</p>
     </div>
   </div>
 </section>
 
-
-  <!-- FORM CONTATTI -->
-<section class="section contact ">
+<!-- CONTATTI -->
+<section class="section contact" id="scrivimi">
   <h2>Scrivimi</h2>
   <hr class="section-divider">
 
-  <p class="contact-intro">
-    Se vuoi parlarmi del tuo percorso vocale o chiedere informazioni,
-    puoi scrivermi direttamente qui:
-  </p>
-
   <div class="contact-links">
-
-    <a class="contact-item">
-      <i class="fa fa-envelope" style="font-size: 25px;"  aria-hidden="true"    onclick="openGmailPopup()"> </i>
+    <a onclick="openGmailPopup()" class="contact-item">
+      <i class="fa fa-envelope" aria-label="Email"></i>
     </a>
 
-    <a href="https://www.instagram.com/lori_lc/" 
-       target="_blank" 
-       rel="noopener"
-       class="contact-item">
-    <i class="fa fa-instagram" style="font-size: 25px;" aria-hidden="true"> </i>
+    <a href="https://www.instagram.com/lori_lc/" target="_blank" class="contact-item">
+      <i class="fa fa-instagram" aria-label="Instagram"></i>
     </a>
-
   </div>
 </section>
 
-  <!-- FOOTER -->
-  <footer id="contatti">
- 
-    <p>Lorenza Catricalà - Cantante e Musicista</p>
-    <p> 📍 Pisa, Italy</p>
-  </footer>
+<footer>
+  <p>Lorenza Catricalà – Cantante e Musicista</p>
+  <p>📍 Pisa, Italy</p>
+</footer>
 
-
- <script>
-  const reveals = document.querySelectorAll(".reveal");
-
+<script>
+  // REVEAL
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-      }
+      if (entry.isIntersecting) entry.target.classList.add("visible");
     });
-  }, {
-    threshold: 0.15
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
+  // GMAIL
+  function openGmailPopup() {
+    const url = 'https://mail.google.com/mail/?view=cm&fs=1&to=lorenza.catricala@gmail.com';
+    window.open(url, '_blank', 'width=600,height=600');
+  }
+
+  // READ MORE
+  document.querySelectorAll('.read-more').forEach(button => {
+    button.addEventListener('click', () => {
+      const text = button.previousElementSibling;
+      text.classList.toggle('expanded');
+      button.textContent = text.classList.contains('expanded') ? 'Mostra meno' : 'Leggi tutto';
+    });
   });
 
-  reveals.forEach(el => observer.observe(el));
+  // NAV TOGGLE
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
 
-
-  
-
-//EMAIL
-function openGmailPopup() {
-  const url = 'https://mail.google.com/mail/?view=cm&fs=1'
-            + '&to=lorenza.catricala@gmail.com'
-            + '&su=Contact%20from%20Website'
-            + '';
-
-  // Open Gmail in a small popup (600x600)
-  window.open(url, 'gmailPopup', 'width=600,height=600,top=100,left=100');
-}
+  toggle.addEventListener('click', () => nav.classList.toggle('active'));
+  nav.querySelectorAll('a').forEach(link =>
+    link.addEventListener('click', () => nav.classList.remove('active'))
+  );
 </script>
-
 
 </body>
 </html>
