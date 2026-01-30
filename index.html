@@ -320,7 +320,8 @@ Molto bello è il fatto che sia riuscita a creare un ambiente di apprendimento s
       href="mailto:info.voice.canto@gmail.com?subject=Contatto dal sito"
       class="contact-item email-link"
     >
-      <i class="fa fa-envelope" style="font-size:25px"></i>
+                <i class="fa fa-envelope" style="font-size:25px"></i>
+
     </a>
 
 
@@ -373,22 +374,22 @@ if (aboutToggle) {
   // Open Gmail in a small popup (600x600)
   window.open(url, 'gmailPopup', 'width=600,height=600,top=100,left=100');
 }*/
-
 document.querySelector('.email-link').addEventListener('click', function (e) {
-  e.preventDefault(); // ⬅️ BLOCCA mailto / browser picker
+  const isDesktop = window.innerWidth > 768;
 
-  console.log('CLICK intercettato');
+  if (isDesktop) {
+    e.preventDefault(); // SOLO desktop
 
-  if (window.innerWidth > 768) {
-    setTimeout(() => {
-      window.open(
-        'https://mail.google.com/mail/?view=cm&fs=1&to=info.voice.canto@gmail.com&su=Contatto%20dal%20sito',
-        '_blank',
-        'gmailPopup,width=600,height=600,top=100,left=100'
-      );
-    }, 500);
+    window.open(
+      'https://mail.google.com/mail/?view=cm&fs=1&to=info.voice.canto@gmail.com&su=Contatto%20dal%20sito',
+      '_blank',
+      'width=600,height=600'
+    );
   }
+  // mobile: lasciamo fare al mailto (esperienza corretta)
 });
+
+
 
 
 
