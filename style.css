@@ -147,13 +147,14 @@ p, li, input, textarea {
   font-family: "Mrs Saint Delafield", cursive;
   font-weight: 100;
   margin-top:5rem;
+    color: #f3ebebb7;
 
 }
 
 .overlay h2 {
   font-size: 1.7rem;
   text-shadow: #222 1px 1px 8px;
-    color: #f3ebebb7;
+  text-transform: uppercase;
 
 
 }
@@ -168,15 +169,14 @@ p, li, input, textarea {
 
   .italic {
     font-size: 2rem;
-      font-family: "Tangerine", cursive;
-      text-align: center;
+    font-family: "Tangerine", cursive;
+    text-align: center;
     line-height: 1;
-    
-        margin-bottom: 2rem;
+    margin-bottom: 2rem;
 
   }
   .yellow-txt {
-    color: #ebc14dc2;
+    color: #76521bcc;
   }
 
 .btn {
@@ -238,6 +238,7 @@ p, li, input, textarea {
   background: linear-gradient(185deg, #f2eeea, #faf6f0);
   padding: 5rem;
 }
+
 
 
 /*MOBILE*/
@@ -304,15 +305,16 @@ p, li, input, textarea {
   border-radius: 12px;
   transition: background 0.3s ease, border-color 0.3s ease;
   text-align: center;
-  width: 300px;
+  width: 200px;
 }
 
 .service-btn:hover {
   background: #f7f7f7;
 }
 
-.service-btn.active {
-  border-color: #000;
+.service-btn.active{
+  border: 1px outset #c1ab48;
+  background: #dac04d;
 }
 
 .service-detail {
@@ -331,8 +333,8 @@ p, li, input, textarea {
  display: flex;
   justify-content: center; /* centra la fila */
   gap: 20px;
-  padding: 40px 20px;
   flex-wrap:wrap;
+  padding: 30px;
  }
 /*
 .grid {
@@ -609,6 +611,11 @@ footer {
   .section {
     padding: 10px 5px;
   }
+  .grid{
+    flex-wrap: wrap;
+    padding: 0;
+    width: 100%;
+  }
 
     .section h2{
     margin-top: 50px;
@@ -643,7 +650,8 @@ footer {
 
   .overlay h2 {
     margin-top:1.2rem;
-    font-size: 1rem;  
+    font-size: 1.2rem;  
+
   }
 
   .overlay p {
@@ -708,7 +716,7 @@ footer {
 
 
 .events-section {
-  background: linear-gradient(135deg, #f2eeea, #faf6f0);
+  background: linear-gradient(135deg, #f2eeea51, #faf6f0);
 }
 
 .events-intro {
@@ -761,6 +769,20 @@ footer {
 
 .centered {
     text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+.bold {
+    font-weight: bold;
+}
+
+.space {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 

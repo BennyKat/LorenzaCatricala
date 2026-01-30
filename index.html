@@ -44,9 +44,10 @@
     <!--<h1>LORENZA CATRICALÀ</h1>-->
     <h1>Lorenza Catricalà</h1>
 <!--    <h2>CANTANTE<br> INSEGNANTE <span class="yellow-txt">DI CANTO</span> <br> DIRETTRICE DI <span class="yellow-txt">CORO GOSPEL</span></h2>-->
-  <h2>  DIRETTRICE DI <span class="yellow-txt">CORO GOSPEL</span> <br> INSEGNANTE <span class="yellow-txt">DI CANTO</span> <br>CANTANTE<br></h2>
+<!-- <h2>  DIRETTRICE DI <span class="yellow-txt">CORO GOSPEL</span> <br> INSEGNANTE <span class="yellow-txt">DI CANTO</span> <br>CANTANTE<br></h2> -->
 
     <!-- <p >La voce è uno strumento. Non insegno solo a cantare, ma a fare musica con la voce</p>-->
+        <h2 >La voce è uno strumento, puoi impararare a suonarla!</h2>
 
   </div>
 </section>
@@ -61,7 +62,7 @@
 
     <!-- BLOCCO SEMPRE VISIBILE -->
     <p class="about-preview">
-        <p class ="italic">"La voce è uno strumento. Non insegno solo a cantare, ma a fare musica con la voce."</p>
+    <p class="centered  yellow-txt" > <b>  &#x2022; </b>  <b> CANTANTE </b><b> &#x2022; </b><br><b> &#x2022; </b> <b> INSEGNANTE DI CANTO  </b> <b>  &#x2022; </b>  <br>   <b> &#x2022; </b><b>DIRETTRICE CORO GOSPEL</b> <b> &#x2022; </b></p>
 
       Sono una cantante e direttrice vocale con una formazione solida e in continuo percorso di crescita.
       Ho conseguito il diploma <b>LLCM in Popular Music Vocals</b> presso il London College of Music
@@ -315,9 +316,13 @@ Molto bello è il fatto che sia riuscita a creare un ambiente di apprendimento s
   <hr class="section-divider">
 
   <div class="contact-links">
-    <a onclick="openGmailPopup()" class="contact-item">
-      <i class="fa fa-envelope" aria-label="Email"></i>
+    <a 
+      href="mailto:info.voice.canto@gmail.com?subject=Contatto dal sito"
+      class="contact-item email-link"
+    >
+      <i class="fa fa-envelope" style="font-size:25px"></i>
     </a>
+
 
     <a href="https://www.instagram.com/lori_lc/" target="_blank" class="contact-item">
       <i class="fa fa-instagram" aria-label="Instagram"></i>
@@ -359,7 +364,7 @@ if (aboutToggle) {
 
 
 //EMAIL
-function openGmailPopup() {
+/*function openGmailPopup() {
   const url = 'https://mail.google.com/mail/?view=cm&fs=1'
             + '&to=info.voice.canto@gmail.com'
             + '&su=Contact%20from%20Soul%20Singers%20Website'
@@ -367,7 +372,26 @@ function openGmailPopup() {
 
   // Open Gmail in a small popup (600x600)
   window.open(url, 'gmailPopup', 'width=600,height=600,top=100,left=100');
-}
+}*/
+
+document.querySelector('.email-link').addEventListener('click', function (e) {
+  e.preventDefault(); // ⬅️ BLOCCA mailto / browser picker
+
+  console.log('CLICK intercettato');
+
+  if (window.innerWidth > 768) {
+    setTimeout(() => {
+      window.open(
+        'https://mail.google.com/mail/?view=cm&fs=1&to=info.voice.canto@gmail.com&su=Contatto%20dal%20sito',
+        '_blank',
+        'gmailPopup,width=600,height=600,top=100,left=100'
+      );
+    }, 500);
+  }
+});
+
+
+
 
   // READ MORE
   document.querySelectorAll('.read-more').forEach(button => {
